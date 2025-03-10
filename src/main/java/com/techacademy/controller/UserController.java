@@ -83,10 +83,6 @@ public class UserController {
             return getUser(null, model);
         }
 
-        if (id != null) {
-            user.setId(id);
-        }
-
         service.saveUser(user);
         return "redirect:/user/list";
     }
